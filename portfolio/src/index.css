@@ -11,3 +11,50 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  background-color: palegreen;
+}
+
+.text[mode='light'],
+.linkText[mode='dark'],
+.secondaryText[mode='dark'],
+.linkText[mode='light']:hover {
+  color: orangered;
+  animation: lightToDarkColor;
+}
+
+.text[mode='dark'],
+.linkText[mode='light'] .secondaryText[mode='light'],
+.linkText[mode='dark']:hover {
+  color: white;
+  animation: darkToLightColor;
+}
+
+.background[mode='dark'],
+.secondaryBackground[mode='light'],
+.linkBackground[mode='light'] {
+  background-color: black;
+  color: white;
+  animation: lightToDarkBackground;
+}
+
+@keyframes lightToDarkColor {
+  0% {
+    color: white;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
+@keyframes darkToLightColor {
+  0% {
+    color: black;
+  }
+
+  100% {
+    color: white;
+  }
+}

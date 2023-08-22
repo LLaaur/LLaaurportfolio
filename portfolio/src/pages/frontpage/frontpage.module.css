@@ -3,14 +3,11 @@
     padding: 0;
     width: 100vw;
     height: 100vh;
-    background: palegreen;
 }
 
 .Menu {
     width: 100vw;
     height: 100%;
-    max-height: 60px;
-    right: 8vw;
     display: flex;
     justify-content: end;
 }
@@ -21,14 +18,8 @@ li {
     width: 30vw;
     justify-content: space-between;
     align-content: center;
-    align-items: middle;
     font-weight: 500;
 }
-
-a {
-    color: darkorchid;
-}
-
 
 ul {
     margin-right: 10rem;
@@ -37,8 +28,6 @@ ul {
 .Link {
     font-size: 1.5rem;
     text-decoration: none;
-    height: 2vw;
-    display: block;
 }
 
 .Link:hover {
@@ -48,38 +37,37 @@ ul {
 
 .ToggleContainer {
     position: relative;
-    width: 3.75vw;
-    height: 1.875vw;
+    width: 3.50vw;
+    height: 1.575vw;
     border-radius: 17px;
     background: azure;
 }
 
 .Toggle {
     position: relative;
-    right: 1.25vw;
-    width: 3.75vw;
-    height: 1.875vw;
+    width: 3.5vw;
+    height: 1.575vw;
     border-radius: 17px;
+    background: azure;
 }
 
 .ToggleCircle {
     position: absolute;
-    top: 0.4vw;
-    width: 1vw;
-    height: 1vw;
+    top: 0.25vw;
+    width: 0.6vw;
+    height: 0.6vw;
     border-radius: 50%;
-    background-color: black;
     cursor: pointer;
 }
 
 .ToggleCircle[mode='light'] {
-    left: 0.7vw;
+    left: 0.3vw;
     transition: left 0.3s ease-out;
-    border: 0.3vw solid #1b494b;
+    border: 0.3vw solid #fcfbfb;
 }
 
 .ToggleCircle[mode='dark'] {
-    left: -1.3vw;
+    left: 2vw;
     transition: left 0.3s ease-out;
-    border: 0.3vw solid #c9d9c2;
+    border: 0.3vw solid #000000;
 }
