@@ -1,12 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import FrontPage from "./pages/frontpage/frontpage"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      hi wasup
-      </header>
+      <FrontPage />
     </div>
   );
 }
