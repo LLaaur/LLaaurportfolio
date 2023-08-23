@@ -1,4 +1,5 @@
-import FrontPage from "./pages/frontpage/frontpage"
+import FrontPage from "./pages/frontpage/frontpage";
+import AboutPage from "./components/about/about";
 import { useState } from 'react';
 
 import styles from "./index.css"
@@ -13,11 +14,12 @@ function App() {
     }
 
   return (
-    <div className="App" mode={mode}>
+    <div className={"App" + " background"} mode={mode}>
       <FrontPage 
       toggleMode={toggleModeHandler}
       mode={mode}
       />
+      <AboutPage mode={mode}/>
     </div>
   );
 }
