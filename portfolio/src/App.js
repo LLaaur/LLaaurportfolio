@@ -2,6 +2,7 @@ import FrontPage from "./pages/frontpage/frontpage";
 import AboutPage from "./components/about/about";
 import { useState } from 'react';
 import Skills from "./components/skills/skills";
+import Projects from "./pages/projects/projects";
 
 import styles from "./index.css"
 
@@ -22,6 +23,7 @@ function App() {
       />
       <AboutPage mode={mode}/>
       <Skills mode={mode}/>
+      <Projects mode={mode}/>
     </div>
   );
 }
