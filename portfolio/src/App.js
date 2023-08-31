@@ -5,6 +5,7 @@ import Skills from "./components/skills/skills";
 import Projects from "./pages/projects/projects";
 import Contact from "./pages/contact/contact";
 
+
 import styles from "./index.css"
 
 

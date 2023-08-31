@@ -7,7 +7,7 @@
 
 .About{
     width: 90vw;
-    height: 90vh;
+    height: 100vh;
 }
 
 .aboutText{
@@ -31,7 +31,7 @@ p {
     width: 14vw;
     height: auto;
     position: relative;
-    left: 50vw;
-    bottom: 15vw;
+    left: 43vw;
+    bottom: 6vw;
     padding-bottom: 3rem;
 }

@@ -1,9 +1,10 @@
 import React, {useState} from "react";
 import VisibiltySensor from "react-visibility-sensor";
 import styles from "./contact.module.css";
+import arrowLink from "../../assets/link.svg"
 
 
-const Contact = () => {
+const Contact = (props) => {
 
     const [visible, setVisible] = useState(false);
 
@@ -37,6 +38,13 @@ const Contact = () => {
                                 github
                             </a>
                         </h4>
+
+                        <img
+                            src={arrowLink}
+                            className={styles.GithubArrow}
+                            mode={props.mode}
+                            alt=''
+                        />
                 </div>  
                 </VisibiltySensor>
 
@@ -46,6 +54,11 @@ const Contact = () => {
                             linkedin
                         </a>
                     </h4>
+
+                    <img
+                        src={arrowLink}
+                        alt=''
+                    />
                 </div>
 
                 <div className={styles.CV}>
@@ -54,6 +67,13 @@ const Contact = () => {
                             resume
                         </a>
                     </h4>
+
+                    <img
+                        src={arrowLink}
+                        alt=''
+                        className={styles.CVArrow}
+                        mode={props.mode}
+                    />
                 </div>
 
             </div>

@@ -26,6 +26,10 @@ a:visited{
 .Linkedin,
 .CV{
     font-size: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
 }
 
 
@@ -57,4 +61,14 @@ a:visited{
     display: inline-block;
     transition: transform 0.4s ease-out;
     transform: translateY(0);
+}
+
+.GithubArrow[mode='light'],
+.CVArrow[mode='light'] {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(900%) hue-rotate(140deg) brightness(93%) contrast(100%);
+}
+
+.GithubArrow[mode='dark'],
+.CVArrow[mode='dark'] {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(1502%) hue-rotate(251deg) brightness(98%) contrast(90%);
 }
