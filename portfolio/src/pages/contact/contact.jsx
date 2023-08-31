@@ -29,14 +29,16 @@ const Contact = () => {
                     </h4>
                 </div>
 
+                <VisibiltySensor onChange={onScrollHandler}>
                 <div className={styles.Github}>
-                    <h4>
-                        <a className={visible ? styles.Visible : styles.Invisible} href="https://github.com/LLaaur" target="_blank" rel="noopener norefferer">
-                            github
-                        </a>
-                    </h4>
-                    <VisibiltySensor onChange={onScrollHandler}/>
-                </div>
+
+                        <h4>
+                            <a className={visible ? styles.Visible : styles.Invisible} href="https://github.com/LLaaur" target="_blank" rel="noopener norefferer">
+                                github
+                            </a>
+                        </h4>
+                </div>  
+                </VisibiltySensor>
 
                 <div className={styles.Linkedin}>
                     <h4>

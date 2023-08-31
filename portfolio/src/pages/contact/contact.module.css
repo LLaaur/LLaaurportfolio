@@ -1,0 +1,60 @@
+.Contact{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a:visited{
+    color: inherit;
+}
+
+.Title{
+    font-size: 5rem;
+}
+
+.ContactLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Email,
+.Github,
+.Linkedin,
+.CV{
+    font-size: 3.5rem;
+}
+
+
+.Email a:hover,
+.Github a:hover,
+.Linkedin a:hover,
+.CV a:hover {
+  text-decoration: underline;
+}
+
+
+.Github a,
+.CV a {
+  color: #fa8888;
+}
+
+.Email,
+.Linkedin{
+    color: white;
+}
+
+.Invisible {
+    display: inline-block;
+    transition: transform 0.4s ease-out;
+    transform: translateY(10vw);
+}
+
+.Visible {
+    display: inline-block;
+    transition: transform 0.4s ease-out;
+    transform: translateY(0);
+}
