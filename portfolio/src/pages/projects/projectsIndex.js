@@ -24,16 +24,15 @@ export const myProjects = [
         link: "https://llaaur.github.io/library_project/"
     },
     {
+        name: "Rock-Paper-Scissors",
+        gif: "https://res.cloudinary.com/duij2o8vg/image/upload/v1693396947/rock-paper_foy2wn.gif",
+        github: "https://github.com/LLaaur/rock-paper-scissors",
+        link: "https://llaaur.github.io/rock-paper-scissors/",
+    },
+    {
         name: "To-Do List",
         gif: "https://res.cloudinary.com/duij2o8vg/image/upload/v1693396879/to-do_moiddn.gif",
         github: "https://github.com/LLaaur/to_do_website",
         link: "https://llaaur.github.io/to_do_website/"
-    },
-    {
-        name: "Rock, Paper, Scissors",
-        gif: "https://res.cloudinary.com/duij2o8vg/image/upload/v1693396947/rock-paper_foy2wn.gif",
-        github: "https://github.com/LLaaur/rock-paper-scissors",
-        link: "https://llaaur.github.io/rock-paper-scissors/"
     }
-];
-
+]

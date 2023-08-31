@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import {Swipeable} from "react-swipeable";
 import styles from "./projects.module.css";
 import carouselLight from "../../assets/carousel-light.svg";
 import carouselDark from "../../assets/carousel-dark.svg";
@@ -9,16 +8,16 @@ import {myProjects} from "./projectsIndex";
 const Projects = (props) => {
 
     const [earlierProject, setEarlierProject] = useState(myProjects[myProjects.length - 1]);
-    const [previousProject, setPreviousProject] = useState(myProjects[0]);
+    const [previousProject, setPreviousProject] = useState(myProjects[1]);
     const [currentProject, setCurrentProject] = useState(myProjects[1]);
-    const [nextProject, setNextProject] = useState(myProjects[2]);
-    const [laterProject, setLaterProject] = useState(myProjects[3]);
+    const [nextProject, setNextProject] = useState(myProjects[1]);
+    const [laterProject, setLaterProject] = useState(myProjects[2]);
 
     const [goBackBtn, setGoBackBtn] = useState(0);
     const[goForwardBtn, setGoForwardBtn] = useState(0);
 
     let projectName = currentProject.name;
-    let githubLink = currentProject.link;
+    let githubLink = currentProject.github;
     let websiteLink = currentProject.link;
 
     const carouselArrow = props.mode === "light" ? carouselLight : carouselDark;
