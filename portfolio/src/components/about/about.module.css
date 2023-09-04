@@ -1,12 +1,23 @@
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    margin-top: 10rem;
+}
+
 .AboutPage {
     display: flex;
-    justify-content: space-around;
-    padding-left: 4vw;
-    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
 }
 
 .About{
-    width: 90vw;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -21,17 +32,13 @@ h2 {
 }
 
 p {
-    width: 35vw;
+    width: 55vw;
     max-width: 100%;
     font-size: 2rem;
 }
 
 .Arrow {
-    transform: rotate(200deg) scaleY(-1);
-    width: 14vw;
-    height: auto;
+    margin-top: 6rem;
+    height: 18vh;
     position: relative;
-    left: 43vw;
-    bottom: 6vw;
-    padding-bottom: 3rem;
 }

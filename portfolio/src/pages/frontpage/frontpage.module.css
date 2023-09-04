@@ -2,30 +2,32 @@
     margin: 0;
     padding: 0;
     width: 100vw;
-    height: 35vh;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Menu {
+    width: 100vw;
     display: flex;
     justify-content: end;
 }
 
 .Title{
-    padding-left: 4vw;
     font-size: 6rem;
 }
 
 .SecondaryTitle{
-    padding-left: 4vw;
     font-size: 3rem;
+    margin: 0;
 }
 
 .Arrow {
-    transform: scaleY(1);
-    width: 14vw;
-    height: auto;
+    height: 18vh;
     position: relative;
-    left: 26vw;
+    margin-top: 6rem;
 }
 
 li {

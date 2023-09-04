@@ -1,5 +1,13 @@
 .SkillsComponent {
-    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+p{
+    text-align: center;
 }
 
 .SkillsContainer {
@@ -20,9 +28,7 @@
 }
 
 .Arrow {
-    transform: rotate(145deg) scaleY(-1);
-    width: 14vw;
-    height: auto;
+    height: 18vh;
     position: relative;
-    left: 35vw;
+    margin-top: 6rem;
 }
