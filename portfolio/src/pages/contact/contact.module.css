@@ -12,6 +12,7 @@ a:visited{
 
 .Title{
     font-size: 5rem;
+    color: #fbc40e;
 }
 
 .ContactLinks{
@@ -19,6 +20,13 @@ a:visited{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.Email a,
+.Github a,
+.Linkedin a,
+.CV a{
+  text-decoration: none;
 }
 
 .Email,
@@ -43,7 +51,7 @@ a:visited{
 
 .Github a,
 .CV a {
-  color: #fa8888;
+  color: #fbc40e;
 }
 
 .Email,

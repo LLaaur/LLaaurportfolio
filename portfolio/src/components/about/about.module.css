@@ -8,6 +8,7 @@
     margin-top: 10rem;
 }
 
+
 .AboutPage {
     display: flex;
     flex-direction: column;
@@ -35,6 +36,7 @@ p {
     width: 55vw;
     max-width: 100%;
     font-size: 2rem;
+    color: white;
 }
 
 .Arrow {

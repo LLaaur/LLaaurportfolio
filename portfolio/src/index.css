@@ -19,14 +19,18 @@ code {
 .App{
   padding: 0;
   margin: 0;
-  background-color: palegreen;
+  background-color: #213fc7;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text[mode='light'],
 .linkText[mode='dark'],
 .secondaryText[mode='dark'],
 .linkText[mode='light']:hover {
-  color: orangered;
+  color: #fbc40e;
   animation: lightToDarkColor;
 }
 
