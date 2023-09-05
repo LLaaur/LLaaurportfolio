@@ -37,7 +37,7 @@ code {
 .text[mode='dark'],
 .linkText[mode='light'] .secondaryText[mode='light'],
 .linkText[mode='dark']:hover {
-  color: red;
+  color: #66fcf1;
   animation: darkToLightColor;
 }
 

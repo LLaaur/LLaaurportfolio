@@ -15,7 +15,7 @@ const Contact = (props) => {
     return (
         <div className={styles.Contact} id="contact">
 
-            <h2 className={styles.Title}>
+            <h2 className={styles.Title} mode={props.mode}>
                 Contact
             </h2>
 
@@ -31,10 +31,10 @@ const Contact = (props) => {
                 </div>
 
                 <VisibiltySensor onChange={onScrollHandler}>
-                <div className={styles.Github}>
+                <div className={styles.Github} >
 
                         <h4>
-                            <a className={visible ? styles.Visible : styles.Invisible} href="https://github.com/LLaaur" target="_blank" rel="noopener norefferer">
+                            <a className={visible ? styles.Visible : styles.Invisible} href="https://github.com/LLaaur" target="_blank" rel="noopener norefferer" mode={props.mode}>
                                 github
                             </a>
                         </h4>
@@ -63,7 +63,7 @@ const Contact = (props) => {
 
                 <div className={styles.CV}>
                     <h4>
-                        <a className={visible ? styles.Visible : styles.Invisible} href="https://www.visualcv.com/" target="_blank" rel="noopener norefferer">
+                        <a className={visible ? styles.Visible : styles.Invisible} href="https://www.visualcv.com/" target="_blank" rel="noopener norefferer" mode={props.mode}>
                             resume
                         </a>
                     </h4>

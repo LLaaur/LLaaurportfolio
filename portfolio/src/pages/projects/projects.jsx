@@ -131,6 +131,7 @@ const Projects = (props) => {
                 </div>
                 <div className={styles.NameContainer}>
                     <img
+                        mode={props.mode}
                         onClick={onPreviousHandler}
                         className={styles.PrevArrow}
                         src={carouselArrow}

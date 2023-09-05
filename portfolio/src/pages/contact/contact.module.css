@@ -15,6 +15,10 @@ a:visited{
     color: #fbc40e;
 }
 
+.Title[mode='dark']{
+  color: #66fcf1
+}
+
 .ContactLinks{
     display: flex;
     justify-content: center;
@@ -48,15 +52,19 @@ a:visited{
   text-decoration: underline;
 }
 
-
-.Github a,
-.CV a {
-  color: #fbc40e;
-}
-
 .Email a,
 .Linkedin a{
     color: white;
+}
+
+.Github a,
+.CV a{
+  color: #fbc40e;
+}
+
+.Github a[mode='dark'],
+.CV a[mode='dark']{
+  color: #66fcf1;
 }
 
 .Invisible {
@@ -78,5 +86,5 @@ a:visited{
 
 .GithubArrow[mode='dark'],
 .CVArrow[mode='dark'] {
-  filter: brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(1502%) hue-rotate(251deg) brightness(98%) contrast(90%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(100%) saturate(1502%) hue-rotate(134deg) brightness(98%) contrast(90%);
 }

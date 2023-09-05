@@ -1,4 +1,4 @@
-.Projects{
+.Projects {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,19 +81,27 @@
 .Link {
     width: 15rem;
     border-radius: 10.6vw;
-    background-color: #fbc40e;
+    background-color: #ffffff;
     text-decoration: none;
     text-align: center;
     font-size: 1.8rem;
-    border: 3px solid #1B494B;
+    border: 3px solid white;
     margin-bottom: 5rem;
     padding: 0.5rem;
     font-weight: 500;
 }
 
-
 .Link:hover {
     border: 3px solid white;
     background-color: #213fc7;
+}
 
+.Link[mode='dark'] {
+    background-color: #ffffff;
+    color: black;
+}
+
+.Link[mode='dark']:hover {
+    background-color: black;
+    color: #66fcf1;
 }
