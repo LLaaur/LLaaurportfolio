@@ -13,7 +13,7 @@ const Contact = (props) => {
     };
 
     return (
-        <div className={styles.Contact} id="Contact">
+        <div className={styles.Contact} id="contact">
 
             <h2 className={styles.Title}>
                 Contact

@@ -22,10 +22,10 @@
     position: absolute;
     font-size: 1.4vw;
     width: 100%;
-    color: white;
+    color: gold;
     top: 6vw;
     text-align: center;
-    transform: translateY(50%);
+    transform: translateY(80%);
     opacity: 0;
 }
 
@@ -33,6 +33,7 @@
     opacity: 1;
     transform: translateY(100%);
     animation: SKILL-REVEAL 0.8s;
+    font-weight: 500;
 }
 
 @keyframes SKILL-REVEAL {

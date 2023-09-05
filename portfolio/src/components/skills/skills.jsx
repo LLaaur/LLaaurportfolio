@@ -10,7 +10,7 @@ function getSkills(images, skills) {
 
     images.map(({ id, source, name }) => {
         skills.push(
-            <Skill dataLine={name} key={id}>
+            <Skill dataLine={name} key={id} className={styles.Skill}>
                 <img className={styles.Icon} src={source} alt='' />
             </Skill>
         );

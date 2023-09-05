@@ -17,8 +17,9 @@ p{
     margin-bottom: 48px;
 }
 
+
 .SkillsContainer:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .Icon {

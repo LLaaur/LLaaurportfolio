@@ -78,6 +78,11 @@ ul {
     cursor: pointer;
 }
 
+.Mode:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .ToggleCircle[mode='light'] {
     left: 0.3vw;
     transition: left 0.3s ease-out;
