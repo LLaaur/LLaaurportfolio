@@ -44,3 +44,17 @@ p {
     height: 18vh;
     position: relative;
 }
+
+.TriangleLeft{
+    position: absolute;
+    left: -1rem;
+    width: 22rem;
+    transform: rotate(90deg);
+}
+
+.TriangleRight{
+    position: absolute;
+    right: -3rem;
+    width: 22rem;
+    transform: rotate(270deg);
+}

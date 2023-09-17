@@ -30,22 +30,28 @@ const Skills = (props) => {
     getSkills(otherImages, otherSkills);
 
     return (
-        <div id='skills' className={styles.SkillsComponent}>
-            <h2 mode={props.mode} className={styles.Skills + ' text'}>Skills</h2>
-            <p>front-end</p>
-            <div className={styles.SkillsContainer}>
-                {frontendSkills}
+            <div id='skills' className={styles.SkillsComponent}>
+                <h2 mode={props.mode} className={styles.Skills + ' text'}>Skills</h2>
+                <p>front-end</p>
+                <div className={styles.Floating}>
+                    <div className={styles.SkillsContainer}>
+                        {frontendSkills}
+                    </div>
+                </div>
+                <p>back-end</p>
+                <div className={styles.Floating}>
+                    <div className={styles.SkillsContainer}>
+                        {backendSkills}
+                    </div>
+                </div>
+                <p>miscellaneous</p>
+                <div className={styles.Floating}>
+                    <div className={styles.SkillsContainer}>
+                        {otherSkills}
+                    </div>
+                </div>
+                <img className={styles.Arrow} src={arrow} alt='' />
             </div>
-            <p>back-end</p>
-            <div className={styles.SkillsContainer}>
-                {backendSkills}
-            </div>
-            <p>miscellaneous</p>
-            <div className={styles.SkillsContainer}>
-                {otherSkills}
-            </div>
-            <img className={styles.Arrow} src={arrow} alt='' />
-        </div>
     );
 };
 
