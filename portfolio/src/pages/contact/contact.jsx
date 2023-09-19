@@ -58,6 +58,7 @@ const Contact = (props) => {
                     <img
                         src={arrowLink}
                         alt=''
+                        className={styles.LinkedinArrow}
                     />
                 </div>
 

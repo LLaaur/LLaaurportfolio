@@ -32,19 +32,19 @@ const Skills = (props) => {
     return (
             <div id='skills' className={styles.SkillsComponent}>
                 <h2 mode={props.mode} className={styles.Skills + ' text'}>Skills</h2>
-                <p>front-end</p>
+                <p className={styles.Field}>front-end</p>
                 <div className={styles.Floating}>
                     <div className={styles.SkillsContainer}>
                         {frontendSkills}
                     </div>
                 </div>
-                <p>back-end</p>
+                <p className={styles.Field}>back-end</p>
                 <div className={styles.Floating}>
                     <div className={styles.SkillsContainer}>
                         {backendSkills}
                     </div>
                 </div>
-                <p>miscellaneous</p>
+                <p className={styles.Field}>miscellaneous</p>
                 <div className={styles.Floating}>
                     <div className={styles.SkillsContainer}>
                         {otherSkills}

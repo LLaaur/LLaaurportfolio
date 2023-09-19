@@ -88,3 +88,35 @@ a:visited{
 .CVArrow[mode='dark'] {
   filter: brightness(0) saturate(100%) invert(73%) sepia(100%) saturate(1502%) hue-rotate(134deg) brightness(98%) contrast(90%);
 }
+
+
+@media all and (max-width: 820px){
+
+
+  .Contact{
+    margin-top: 25rem;
+  }
+
+  .Title{
+
+    font-size: 10rem;
+    
+  }
+
+  .Email,
+  .Github,
+  .Linkedin,
+  .CV{
+      font-size: 6rem;
+  }
+
+  .GithubArrow,
+  .CVArrow,
+  .LinkedinArrow{
+
+    width: 5rem;
+    height: 10rem;
+
+  }
+
+}

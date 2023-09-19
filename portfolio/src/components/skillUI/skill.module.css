@@ -67,3 +67,40 @@
         transform: translateY(100%)
     }
 }
+
+
+@media all and (max-width: 820px){
+
+    .SkillContainer{
+        height: 35vh;
+        width: 15rem;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        position: relative;
+        bottom: 0;
+        transition: bottom 0.2s;
+        border-radius: 50%;
+    }
+
+
+    .SkillContainer::before {
+        content: attr(data-line);
+        position: absolute;
+        font-size: 4rem;
+        width: 100%;
+        color: gold;
+        top: 50vw;
+        text-align: center;
+        transform: translateY(80%);
+        opacity: 0;
+    }
+
+    .SkillContainer:checked::before {
+        opacity: 1;
+        transform: translateY(100%);
+        animation: SKILL-REVEAL 0.8s;
+        font-weight: 500;
+    }    
+
+}
