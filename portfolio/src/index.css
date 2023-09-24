@@ -81,4 +81,8 @@ html{
 
   body{width: 340%}
 
+  .App{
+    margin-left: 15rem;
+  }
+
 }

@@ -1,13 +1,19 @@
 import React from "react";
 import lightArrow from "../../assets/light-arrow.svg";
 import darkArrow from "../../assets/dark-arrow.svg";
+import { useState } from "react";
 
-// import { isMobile } from 'react-device-detect';
-// import { Swipeable } from 'react-swipeable';
+import Hamburger from "../../components/mobile/Hamburger";
 
 import styles from "./frontpage.module.css"
 
 const FrontPage = (props) => {
+
+    const[hamburgerOpen, setHamburgerOpen] = useState(false);
+
+    const toggleHamburger = () =>{
+        setHamburgerOpen(!hamburgerOpen)
+    }
 
     const arrow = props.mode === "ligt" ? darkArrow : lightArrow;
 
@@ -84,6 +90,12 @@ const FrontPage = (props) => {
                     </li>
 
                 </ul>
+            </div>
+
+
+
+            <div className={styles.hamburger} onClick={toggleHamburger}>
+                <Hamburger isOpen={hamburgerOpen} />
             </div>
 
             <h1 mode={props.mode} className={styles.Title + " text"}>
