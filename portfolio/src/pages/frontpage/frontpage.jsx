@@ -92,11 +92,74 @@ const FrontPage = (props) => {
                 </ul>
             </div>
 
+                <div className="navigation">
+                <ul>
+                    <li>
+                        
+                        <a mode={props.mode}
+                            style={{ color: "white", textDecoration: "none" }}
+                            href="#home"
+                            to="\">
+                            Home
+                        </a>
+
+                        <a mode={props.mode}
+                            style={{ color: "white", textDecoration: "none" }}
+                            href="#about"
+                            to="\">
+                            About
+                        </a>
+
+                        <a mode={props.mode}
+                            style={{ color: "white", textDecoration: "none" }}
+                            href="#skills"
+                            to="\">
+                            Skills
+                        </a>
+
+                        <a mode={props.mode}
+                            style={{ color: "white", textDecoration: "none" }}
+                            href="#projects"
+                            to="\">
+                            Projects
+                        </a>
+
+                        <a mode={props.mode}
+                            style={{ color: "white", textDecoration: "none" }}
+                            href="#contact"
+                            to="\">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                    
+                    <div className={styles.hamburger} onClick={toggleHamburger}>
+                        <Hamburger isOpen={hamburgerOpen} />
+                    </div>
+
+                </div>
 
 
-            <div className={styles.hamburger} onClick={toggleHamburger}>
-                <Hamburger isOpen={hamburgerOpen} />
-            </div>
+                <style jsx>
+                        
+                        {`.navigation ul li{
+
+                            display: ${hamburgerOpen ? "flex" : "none"};
+                            flex-direction: column;
+                            font-size: 4rem;
+                            height: 100vh;
+                            width: 90vw;
+                            margin-top: 70%;
+                            position: absolute;
+                            left: 300vw;
+                            background: darkblue;
+                            padding: 2rem;
+
+                        }
+                        `
+                    }
+
+                </style>
 
             <h1 mode={props.mode} className={styles.Title + " text"}>
                 Fleschin Laurentiu
