@@ -64,7 +64,7 @@ const Contact = (props) => {
 
                 <div className={styles.CV}>
                     <h4>
-                        <a className={visible ? styles.Visible : styles.Invisible} href="https://www.visualcv.com/" target="_blank" rel="noopener norefferer" mode={props.mode}>
+                        <a className={visible ? styles.Visible : styles.Invisible} href="https://www.jobseeker.com/d/6EBcrd1g0FV6J8EHUI5Iye/view" target="_blank" rel="noopener norefferer" mode={props.mode}>
                             resume
                         </a>
                     </h4>
